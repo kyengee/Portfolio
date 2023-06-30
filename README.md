@@ -1,5 +1,5 @@
-<h3>Kyengee's Portfolio</h3>
-![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=Kyengee's Portfolio&fontSize=90)
+<h3 style="width:100%; height:40px; text-align:center; font-size:80px;">Kyengee's Portfolio</h3>
+
 
 <br>
 
