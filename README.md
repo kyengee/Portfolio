@@ -18,7 +18,7 @@ http://kyengee.com/samsungBiologics/index.html
 <br>
 
 <h4>bxslider(responsive ver.)</h4>
-made 100% responsive version
+made 100% responsive version<br>
 created period : 3days (23.06.12~23.06.14)<br>
 http://kyengee.com/sliderportfolio/index.html
 
