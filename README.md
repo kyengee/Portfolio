@@ -1,5 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=Welcome%20to%20Kyengee's%20GitHub&animation=twinkling&fontSize=30&fontAlignY=40&fontAlign=70&height=250)
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kyengee&show_icons=true&theme=gruvbox) <br>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kyengee&layout=compact)](https://github.com/kyengee/github-readme-stats) 
 
 <h4>nateon(pc ver.)</h4>
 made 100%  pc version <br>
