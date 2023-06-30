@@ -1,5 +1,4 @@
 <h3>Kyengee's Portfolio</h3>
-http://kyengee.com/index_c.html
 
 <br>
 
