@@ -24,5 +24,10 @@ http://kyengee.com/sliderportfolio/index.html
 
 <br>
 
+<h4>kakaobank(pc ver.)</h4>
+made 100% pc version<br>
+created period : 5days (23.06.13~23.06.17)<br>
+http://kyengee.com/kakaobank/index.html
+
 
 <br>
