@@ -1,0 +1,4 @@
+body, header, section, article, main, footer, div, h1, h2, h3, h4, p, a, ul, li, ol { padding: 0; margin: 0; }
+ul, li { list-style-type: none; }
+a { text-decoration: none; color: black; }
+

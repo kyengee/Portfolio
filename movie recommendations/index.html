@@ -1,0 +1,217 @@
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="hdWrapper">
+                <div class="hdContainer">
+                    <ul class="hdleft">
+                        <li>Movies</li>
+                        <li>Sports</li>
+                        <li>TV Series</li>
+                        <li>Kids</li>
+                        <li class="hdmore">More</li>
+                    </ul>
+                    <ul class="hdright">
+                        <li style="color: #191817;">John Voyager</li>
+                        <li><img src="./img/user.png" alt="user"></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="artWrapper">
+                <div class="artTxt">
+                    <h2>Doctor Strange in the Multiverse of Madness</h2>
+                    <ul>
+                        <li>Action</li>
+                        <li>Adventure</li>
+                        <li>Fantasy</li>
+                    </ul>
+                    <div class="btn">Watch</div>
+                </div>
+            </div>
+        </article>
+
+
+        <div class="sliderWrapper">
+            <div class="trendingMV">
+                <h4>Trending Movies</h4>
+                <div class="slider1">
+                    <div class="bg" style="background: url()">
+                        <div class="txt">
+                            <div class="bgTxt"></div>
+                            <h4>Thor: Love and Thunder</h4>
+                            <h5>2022 • Action</h5>
+                        </div>
+                        <img src="./img/trendingMV-01.jpg" alt="">
+                    </div>
+                    <div class="bg">
+                        <div class="txt">
+                            <div class="bgTxt"></div>
+                            <h4>Squid Game</h4>
+                            <h5>2021 • Drama</h5>
+                        </div>
+                        <img src="./img/trendingMV-02.jpg" alt="">
+                    </div>
+                    <div class="bg">
+                        <div class="txt">
+                            <div class="bgTxt"></div>
+                            <h4>Top Gun Maverick</h4>
+                            <h5>2022 • Action, Drama</h5>
+                        </div>
+                        <img src="./img/trendingMV-03.jpg" alt="">
+                    </div>
+                </div>
+                
+                <script>
+                    var $slider1;
+                    
+                    function buildSliderConfiguration() {
+                        var deviceWidth = $(window).width();
+                        
+                        /* 반응형으로 설정할 옵션 정의 */
+                        var slideNum;  
+                        var slideMargin;
+    
+                        /* 화면 사이즈별 슬라이드 갯수, 마진 설정, 기타 옵션도 설정 가능 */
+                        if (deviceWidth < 480) {
+                            slideNum = 1;
+                            slideMargin = 10;
+                        } else if (deviceWidth < 850) {
+                            slideNum = 2;
+                            slideMargin = 10;
+                        } else {
+                            slideNum = 3;
+                            slideMargin = 10;
+                        }
+    
+                        return {
+                            slideWidth: 2000,
+                            auto: true,
+                            controls: false,
+                            autoHover: true,
+                            adaptiveHeight: true,
+                            pager: false,
+                            moveSlides: 1,
+                            slideMargin: slideMargin, /*반응형 옵션*/
+                            minSlides: slideNum,  /*반응형 옵션*/
+                            maxSlides: slideNum   /*반응형 옵션*/
+                        };
+                    }
+    
+                    function configureSlider() {
+                        var config = buildSliderConfiguration();
+    
+                        if ($slider1 && $slider1.reloadSlider) {
+                            $slider1.reloadSlider(config);
+                        } else {
+                            $slider1 = $('.trendingMV .slider1').bxSlider(config);  /* 슬라이더 클래스 또는 아이디 입력 */
+                        }
+                    }
+    
+                    $('trendingMV .slider-prev').click(function () {
+                        var current = $slider1.getCurrentSlide();
+                        $slider1.goToPrevSlide(current) - 1;
+                    });
+    
+                    $('trendingMV .slider-next').click(function () {
+                        var current = $slider1.getCurrentSlide();
+                        $slider1.goToNextSlide(current) + 1;
+                    });
+    
+                    $(window).on("orientationchange resize", configureSlider);
+                    configureSlider();
+                </script>
+            </div>
+    
+            <div class="topMV">
+                <h4>Top Rated Movies</h4>
+                <div class="slider2">
+                    <div><img src="./img/topMV-01.jpg" alt=""></div>
+                    <div><img src="./img/topMV-02.jpg" alt=""></div>
+                    <div><img src="./img/topMV-03.jpg" alt=""></div>
+                    <div><img src="./img/topMV-04.jpg" alt=""></div>
+                    <div><img src="./img/topMV-05.jpg" alt=""></div>
+                </div>
+    
+                <script>
+                    var $slider2;
+    
+                    function buildSliderConfiguration() {
+                        var deviceWidth = $(window).width();
+                        
+                        /* 반응형으로 설정할 옵션 정의 */
+                        var slideNum;  
+                        var slideMargin;
+    
+                        /* 화면 사이즈별 슬라이드 갯수, 마진 설정, 기타 옵션도 설정 가능 */
+                        if (deviceWidth < 480) {
+                            slideNum = 3;
+                            slideMargin = 10;
+                        } else if (deviceWidth < 850) {
+                            slideNum = 4;
+                            slideMargin = 10;
+                        } else {
+                            slideNum = 5;
+                            slideMargin = 10;
+                        }
+    
+                        return {
+                            slideWidth: 2000,
+                            auto: true,
+                            controls: false,
+                            autoHover: true,
+                            adaptiveHeight: true,
+                            pager: false,
+                            moveSlides: 1,
+                            slideMargin: slideMargin, /*반응형 옵션*/
+                            minSlides: slideNum,  /*반응형 옵션*/
+                            maxSlides: slideNum   /*반응형 옵션*/
+                        };
+                    }
+    
+                    function configureSlider() {
+                        var config = buildSliderConfiguration();
+    
+                        if ($slider2 && $slider2.reloadSlider) {
+                            $slider2.reloadSlider(config);
+                        } else {
+                            $slider2 = $('.topMV .slider2').bxSlider(config);  /* 슬라이더 클래스 또는 아이디 입력 */
+                        }
+                    }
+    
+                    $('topMV .slider-prev').click(function () {
+                        var current = $slider2.getCurrentSlide();
+                        $slider2.goToPrevSlide(current) - 1;
+                    });
+    
+                    $('topMV .slider-next').click(function () {
+                        var current = $slider2.getCurrentSlide();
+                        $slider2.goToNextSlide(current) + 1;
+                    });
+    
+                    $(window).on("orientationchange resize", configureSlider);
+                    configureSlider();
+                </script>
+            </div>
+        </div>
+        
+       <footer>
+            <div class="ftWrapper">
+                <p>Copyright 2023. seonkyeng. all rights reserved.<br>
+                    상업용 목적이 아닌 개인 포트폴리오용으로 만들어졌습니다.<br>
+                    2days, html & css & bxslider </p>
+            </div>
+       </footer>
+    </body>
+</html>
