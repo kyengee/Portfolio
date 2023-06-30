@@ -1,0 +1,62 @@
+<!-- https://manonjouet.com/ -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원선경의 포트폴리오 :: bxslider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>kyengee<hr>portfolio</li>
+            <li>kyengee<hr>about</li>
+        </ul>
+    </header>
+
+    <section>
+        <ul class="bxslider">
+            <li ><img src="https://i.ibb.co/XLZYTLN/parrot-3601194-1280.jpg" /></li>
+            <li ><img src="https://i.ibb.co/xg4w2p4/dolphin-203875-1280.jpg"/></li>
+            <li ><img src="https://i.ibb.co/7CRtftB/sea-2361247-1280.jpg" /></li>
+            <li ><img src="https://i.ibb.co/vhgps6G/elephant-1822636-1280.jpg" /></li>
+            <li ><img src="https://i.ibb.co/R0kKGP1/leopard-515509-1280.jpg" /></li>
+            <li ><img src="https://i.ibb.co/q1D8Q3L/animal-984573-1280.jpg" /></li>
+            <li ><img src="https://i.ibb.co/wccv7G6/tigers-591359-1280.jpg" /></li>
+            <li ><img src="https://i.ibb.co/GkjzFX1/swan-2107052-1280.jpg" /></li>
+            <li ><img src="https://i.ibb.co/HLvQhk7/fox-715588-1280.jpg" alt="fox-715588-1280" /></li>
+        </ul>
+
+        <script>
+            $('.bxslider').bxSlider({
+                maxSlides: 10,
+                minSlides: 1.2,
+                slideWidth: 350,
+                slideMargin: 40,
+                ticker: true,
+                tickerHover: true,
+                speed: 40000,
+                oneToOneTouch: true,
+                preventDefaultSwipeY: true
+            });
+        </script>
+    </section>
+
+    <footer>
+        <ul>
+            <li>kyengee</li>
+            <li><hr></li>
+            <li><img src="./img/icon_ghost.gif" /></li>
+            <!-- <a href="https://www.flaticon.com/kr/free-animated-icons/-" title="유령 같은 애니메이션 아이콘">유령 같은 애니메이션 아이콘 제작자: Freepik - Flaticon</a> -->
+        </ul>
+
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+/* 초기화 */
+body, header, section, article, main, footer, div, h1, h2, h3, h4, p, a, ul, li, ol { padding: 0; margin: 0; font-family: 'LOTTERIADDAG'; }
+ul, li { list-style-type: none; }
+a { text-decoration: none; color: black; }
+
+@font-face {
+    font-family: 'LOTTERIADDAG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* header */
+header { width: 98%; margin: 0px auto; height: 50px; margin-top: 20px; font-size: 16px;  }
+header ul li { text-align: center; cursor: pointer; }
+header ul li:nth-child(1) { float: left; }
+header ul li:nth-child(2) { float: right; }
+header ul li hr { border: 3px solid #33cccc; }
+
+
+
+/* section */
+section { height: auto; position: absolute; top: 50%; transform: translate(0%, -50%);  }
+
+.bxslider { width: 100%; }
+.bxslider li img { width: 100%; height: 100%; overflow: hidden; border-radius: 160px; object-fit: cover; }
+.bxslider li:hover { transform: scaleX( 1.1 ); }
+
+.bx-viewport { height: 400px; }
+.bx-viewport ul { height: 400px; }
+.bx-viewport ul li { height: 400px; }
+
+
+
+/* footer */
+footer { width: 170px; height: 50px; position: fixed; bottom: 1%; right: 1%; font-size: 14px; }
+footer ul li { float: left; }
+footer ul li:nth-child(1) { margin-top: 13px; }
+footer ul li:nth-child(2) { margin-top: 12px; }
+footer ul li:nth-child(3) { margin-top: 4px; }
+footer hr { width: 20px; border: 3px solid #33cccc; margin: 10px 13px; }
+footer ul img { width: 46px; height: 46px; }
+
+
+
+/* 반응형 */
+@media (max-width: 1240px) {
+    header { width: 90%;}   
+}
+
+@media (max-width: 500px) {
+    header { width: 90%; }   
+}
