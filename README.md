@@ -1,9 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&text=Welcome%20to%20Kyengee's%20GitHub&animation=twinkling&fontSize=30&fontAlignY=40&fontAlign=70&height=250)
 
 
-
-<br>
-
 <h4>nateon(pc ver.)</h4>
 made 100%  pc version <br>
 created period : 2days (23.06.23, 23.06.28)<br>
