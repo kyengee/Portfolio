@@ -1,0 +1,155 @@
+<!-- https://samsungbiologics.com/plant4/ -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <title>Samsung Biologics</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><img src="./img/gnb_homepage.png" alt=""><p>SAMSUNG BIOLOGICS</p></li>
+                    <li><img src="./img/gnb_language.png" alt=""><p>KOR</p></li>
+                    <li><img src="./img/gnb_contactus.png" alt=""><p>CONTACT US</p></li>
+                    <li><img src="./img/gnb_share.png" alt=""></li>
+                    <li><img src="./img/gnb_linkedin.png" alt=""></li>
+                    <li><img src="./img/gnb_instagram.png" alt=""></li>
+                    <li><img src="./img/gnb_facebook.png" alt=""></li>
+                    <li><img src="./img/gnb_youtube.png" alt=""></li>
+                    <li><img src="./img/gnb_menu.png" alt=""></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <div class="circleWrapper">
+                <div class="circle circle1">
+                    <div class="outline"></div>
+                    <div class="inline"></div>
+                    <div class="inner">
+                        <div>plant 4 <br>Intro</div>
+                    </div>
+                </div>
+                <div class="circle circle2">
+                    <div class="outline"></div>
+                    <div class="inline"></div>
+                    <div class="inner">
+                        <div>Specs</div>
+                    </div>
+                </div>
+                <div class="circle circle3">
+                    <div class="outline"></div>
+                    <div class="inline"></div>
+                    <div class="inner">
+                        <div>Features</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section>
+            <div class="plant4">
+                <div class="plant">
+                    <p>PLANT</p>
+
+
+                    <div class="slide">
+                        <ul>
+                            <li>
+                                <div class="txt">
+                                    The largest total capacity attained within
+                                    <br>the shortest time in the industry
+                                </div>
+                                <div class="year">604KL in 10 Years</div>
+                            </li>
+                            <li>
+                                <div class="txt">
+                                    The most ambitious biomanufacturing
+                                    <br>engineering project at a single site
+                                </div>
+                                <div class="year">240KL in 3 Years / Modular Design</div>
+                            </li>
+                            <li>
+                                <div class="txt">
+                                    Digitalized to optimize Operational Efficiency,
+                                    <br>Data Integrity, and Client Experience
+                                </div>
+                                <div class="year">Pharma 4.0</div>
+                            </li>
+                        </ul>
+
+                        <script>
+                            $(document).ready(function(){
+                                //슬라이드 메뉴
+                                $('.slide ul li').mouseenter(function(){
+                                    $(this).children('div.submenu').stop().slideDown();
+                                })
+                                $('.slide ul li').mouseleave(function(){
+                                    $(this).children('div.submenu').stop().slideUp();
+                                })
+
+                                //이미지 슬라이드(위로 이동)
+                                setInterval(function(){
+                                    $('div.slide ul').animate({
+                                        top:'-300px'
+                                    },600,function(){
+                                        $('div.slide ul').append($('div.slide ul li').eq(0));
+                                        $('div.slide ul').css("top",0);
+                                    })
+                                },3000)
+
+                                //모달 레이어 팝업
+                                $('li.pop').click(function(){
+                                    $('div#popup_wrap').fadeIn();
+                                })
+                                $('div.close').click(function(){
+                                    $('div#popup_wrap').fadeOut();
+                                })
+                            })
+                        </script>
+                    </div>
+                </div>
+                <div class="plant_4">4</div>
+            </div>
+
+            <div class="news">
+                <div class="newsImg">
+                    <img src="./img/01_article.png" alt="">
+                </div>
+                <div class="newsTxt">
+                    <div class="title">News & Media</div>
+                    <div class="date">Apr 24, 2023</div>
+                    <div class="txt">Samsung Biologics Reports First Quarter 2023 Financial Results</div>
+                    <div class="btn">Read more</div>
+                </div>
+            </div>
+
+            <div class="update">
+                <div class="updateImg">
+                    <img src="./img/c3e6065e0321412d912a6788fa6022b6.jpg" alt="">
+                </div>
+                <div class="updateDate">Mar, 2023</div>
+                <div class="updateTxt">
+                    <div class="title">Construction Update</div>
+                    <div class="btn">Progress</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer>
+            Copyright Samsung Biologics. All rights reserved.  
+        </footer>
+    </body>
+</html>
